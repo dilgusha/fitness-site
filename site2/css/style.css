@@ -1,0 +1,205 @@
+:root {
+    --yasil: #a1c927;
+    --qirmizi: #fd634d;
+}
+header {
+    position: relative;
+    text-align: center;
+    padding: 3.8vh 0 0 0;
+    height: 100vh;
+    background: url('../img/headerbg.jpg') 55%/cover;
+}
+#title, nav {
+    width: 100%; 
+    position: absolute;
+}
+#menu li a {
+    font: .8em 'Avenir Next Rounded';
+    text-transform: uppercase;
+    color: #fff;
+}
+#title {
+    bottom: 17vh;
+}
+h1 {
+    font: 2.5em 'Myriad Pro';
+    text-transform: uppercase;
+    color: #fff;
+}
+h2 {
+    font: 2em 'Open Sans';
+    text-transform: uppercase;
+    padding-bottom: 20px;
+}
+h3 {
+    font: 1.5em 'Open Sans';
+    padding: 24px 0
+}
+h5 {
+    font: 1em 'Myriad Pro';
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #fff;
+}
+h6{
+    font:.9em 'Montserrat';
+    text-transform: uppercase;
+}
+i{
+    padding: 20px;
+}
+.bgqirmizi i{
+    color: #eee;
+}
+.footbg{
+    background: url('../img/Fitness.jpg') 60%/cover;
+    height: 98vh;
+    color: #fff;
+    position: relative;
+}
+.overlay{
+    position: absolute;
+    background: rgba(0, 0, 0, 0.3);
+    height: 95vh;
+    width: 100%;
+    text-align: center;
+    padding: 15% 20%;
+}
+.overlay p{
+    max-width: 490px;
+    margin: 20px auto;
+    height: 90px;
+}
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    /* height: 80vh; */
+    background-color: #0C1119;
+    color: white;
+}
+.flex1{
+    display: flex;  
+    flex-wrap: wrap;
+}
+.icons {
+    color: white;
+    margin-right: 40px;
+    /* padding: 25px; */
+}
+.linkicon{
+    padding: 30px 0;
+}
+.icons i{
+    border-radius: 100%;
+    background-color: #2E3092;
+    padding: 13px;
+    margin: 5px;
+}
+.flex2{
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 10px;
+}
+footer p{
+    font-size: .9em Open Sans;
+    line-height: 24px;
+    color: #8297a7;
+}
+.foot1{
+    padding: 25px;
+    flex-grow: 1;
+}
+.foot2{
+    padding: 25px;
+    flex-grow: 3;
+
+}
+.input{
+    padding: 25px 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+.input button{
+    width: 180px;
+    height: 49px;
+    border-radius: 3px;
+    background-color: #a2ca28;
+    outline: none;
+    border: none;
+}
+.mail{
+    width: 340px!important;
+}
+.input input{
+    outline: none;
+    border: none;
+    margin-right: 5px;
+    /* padding: 25px 100px; */
+    height: 50px;
+    width: 200px;
+    border-radius: 2px;
+    margin-bottom: 10px;
+}
+.art4row { padding: 60px 0}
+.art4row article { padding: 30px 10px}
+.art4row article i { font-size: 2.5em }
+.art4row article p, .art4row article a { font: .9em/1.5 'Proxima Nova'; }
+.art4row article p { padding: 0 0 20px 0; }
+
+#fitnessfirst { background: url('../img/fitnessfirst.jpg') center/cover;}
+#yourbody { background: url('../img/yourbody.jpg') center/cover;}
+#lifestyle { background: url('../img/lifestyle.jpg') center/cover;}
+#summeroffun { background: url('../img/summeroffun.jpg') center/cover;}
+#grape { background: url('../img/grape.jpg') center/cover;}
+#mango { background: url('../img/mango.jpg') center/cover;}
+
+.bgag { background-color: #fff; }
+.bgyasil { background-color: var(--yasil); }
+.bgqirmizi { background-color: var(--qirmizi); }
+.txtag { color: #fff; }
+.txtyasil { color: var(--yasil); }
+.txtqirmizi { color: var(--qirmizi); }
+.vh50 { min-height: 50vh; }
+.artpadd { padding: 50px 40px }
+.txtcenter { text-align: center;}
+
+@media only screen and (min-width: 768px) { 
+    .container { 
+        max-width: 1180px;
+        margin: auto
+    }
+    header {
+        text-align: initial;
+    }
+    nav { padding: 0 50px}
+    #menu { float: right}
+    #menu li { 
+        display: inline-block; 
+        padding: 0 1.9vw
+    }
+    .flex2{
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    #title {
+        width: initial;
+        left: 7.2vw;
+        text-align: right;
+    }
+    h5 { padding: 0 20px 0 0}
+    .row:after {
+        content: '';
+        display: table;
+        clear: both;
+    }
+    footer{
+    padding: 200px 0;
+
+    }
+    .col25 { width: 25%; }
+    .col33 { width: 33.33%; }
+    .col66 { width: 66.66%; }
+    .col99{width: 99.99%;}
+    .fleft { float: left; }
+    .fright { float: right; }
+}
